@@ -1,0 +1,1 @@
+﻿Defines an Interface(contract) for creating an object but lets it's subclasses decides wich object to instanciate.

@@ -1,0 +1,1 @@
+﻿Encapsulates a request as an object thereby, letting you parametarize other obejcts with different requests, queue or log requests and support undoable operations

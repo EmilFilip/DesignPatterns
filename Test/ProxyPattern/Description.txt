@@ -1,0 +1,7 @@
+﻿Provides a surrogate or a placeholder for another object in order to control access to it.
+
+Remote Proxy - To be used when you access a resource that is remote (i.e. Google API).
+
+Virtual Proxy - Controls access to a resource that is expensive to create (i.e. Caching).
+
+Protection Proxy - Controls access to a resource based on access rights (i.e. Access management with permissions )

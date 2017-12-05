@@ -1,0 +1,3 @@
+﻿It's also known as a Wrapper.
+Converts the interface of a class into another interface(contract) the client expects.
+Let's classes work toghether that couldn't otherwise, because of incopatible interfaces

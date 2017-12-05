@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C1DAB90C-4DD8-45D4-A257-E3A20C50FD10}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactoryPattern\IMobilePhone.cs" />
+    <Compile Include="AbstractFactoryPattern\INormalPhone.cs" />
+    <Compile Include="AbstractFactoryPattern\ISmartPhone.cs" />
+    <Compile Include="AbstractFactoryPattern\MobileAbstractFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\Nokia.cs" />
+    <Compile Include="AbstractFactoryPattern\Nokia1600.cs" />
+    <Compile Include="AbstractFactoryPattern\NokiaPixel.cs" />
+    <Compile Include="AbstractFactoryPattern\Samsung.cs" />
+    <Compile Include="AbstractFactoryPattern\SamsungGalaxy.cs" />
+    <Compile Include="AbstractFactoryPattern\SamsungGuru.cs" />
+    <Compile Include="AddapterPattern\AdapterOne.cs" />
+    <Compile Include="AddapterPattern\AdapterTwo.cs" />
+    <Compile Include="AddapterPattern\IAdapter.cs" />
+    <Compile Include="AddapterPattern\LibraryOne.cs" />
+    <Compile Include="AddapterPattern\LibraryTwo.cs" />
+    <Compile Include="FacadePattern\Bank.cs" />
+    <Compile Include="FacadePattern\Credit.cs" />
+    <Compile Include="FacadePattern\Customer.cs" />
+    <Compile Include="FacadePattern\Loan.cs" />
+    <Compile Include="FacadePattern\MortgageFacade.cs" />
+    <Compile Include="OtherStuff\Quiz.cs" />
+    <Compile Include="ProxyPattern\IMath.cs" />
+    <Compile Include="ProxyPattern\Math.cs" />
+    <Compile Include="ProxyPattern\MathProxy.cs" />
+    <Compile Include="StrategyPattern\AudiHornStrategy.cs" />
+    <Compile Include="StrategyPattern\BMWHornStrategy.cs" />
+    <Compile Include="StrategyPattern\Car.cs" />
+    <Compile Include="StrategyPattern\IHornStrategy.cs" />
+    <Compile Include="DecoratorPattern\AddOnDecorator.cs" />
+    <Compile Include="DecoratorPattern\Beverage.cs" />
+    <Compile Include="DecoratorPattern\CaramelDecorator.cs" />
+    <Compile Include="DecoratorPattern\Expresso.cs" />
+    <Compile Include="DecoratorPattern\MilkDecorator.cs" />
+    <Compile Include="DecoratorPattern\Tea.cs" />
+    <Compile Include="FactoryMethodPattern\Circle.cs" />
+    <Compile Include="FactoryMethodPattern\ShapeFactory.cs" />
+    <Compile Include="FactoryMethodPattern\Rectangle.cs" />
+    <Compile Include="FactoryMethodPattern\Shape.cs" />
+    <Compile Include="FactoryMethodPattern\ShapeTypes.cs" />
+    <Compile Include="FactoryMethodPattern\Square.cs" />
+    <Compile Include="OtherStuff\AsyncWrapper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingletonPattern\Logger.cs" />
+    <Compile Include="ObservablePattern\IObservable.cs" />
+    <Compile Include="ObservablePattern\IObserver.cs" />
+    <Compile Include="ObservablePattern\MobilePhone.cs" />
+    <Compile Include="ObservablePattern\Tablet.cs" />
+    <Compile Include="ObservablePattern\WheaterStation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AbstractFactoryPattern\Description.txt" />
+    <Content Include="AddapterPattern\Description.txt" />
+    <Content Include="FacadePattern\Description.txt" />
+    <Content Include="ProxyPattern\Description.txt" />
+    <Content Include="StrategyPattern\Description.txt" />
+    <Content Include="DecoratorPattern\Description.txt" />
+    <Content Include="CommandPattern\Description.txt" />
+    <Content Include="FactoryMethodPattern\Description.txt" />
+    <Content Include="SingletonPattern\Description.txt" />
+    <Content Include="ObservablePattern\Description.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
